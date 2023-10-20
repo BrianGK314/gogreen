@@ -81,7 +81,7 @@ Trust is another hurdle these firms must face, particularly when to comes to off
 
 Important to note, reduction in emissions is also aided by a culture of sustainability within firms. Organisations often lack proper incentive structures for employees to lead more sustainable lifestyles. Noting these factors, GoGreen believes that current systems of reporting and reducing emissions need to be re-thought.
 
-Our solution helps factories manage their CO2 emissions by equipping them with a platform that automates emissions recording. We then connect them to **vetted** carbon-offsetting initiatives which they can track the progress of on our Progress Tracker page. Furthermore, our platform provides these firms with the ability to extract emissions data from utility and equipment bills by uploading them from the main [dashboard](h). This ability is facilitated by the use of IBM’s Watson Discovery to extract relevant text from receipts that is passed onto a [foundational language model (LLAMA 2)](link) for concise metric extraction. Through [Retrieval Augment Generation](https://research.ibm.com/blog/retrieval-augmented-generation-RAG), we can pass key information from the receipt to ClimatiQ, which returns the emissions factor of a material. From this. we can derive the equivalent CO2 emissions.
+Our solution helps factories manage their CO2 emissions by equipping them with a platform that automates emissions recording. We then connect them to **vetted** carbon-offsetting initiatives which they can track the progress of on our Progress Tracker page. Furthermore, our platform provides these firms with the ability to extract emissions data from utility and equipment bills by uploading them from the main [dashboard](h). This ability is facilitated by the use of IBM’s Watson Discovery to extract relevant text from receipts that is passed onto a [foundational language model (LLAMA 2)](link) for concise metric extraction. Through [Retrieval Augment Generation](https://research.ibm.com/blog/retrieval-augmented-generation-RAG), we can pass key information from the receipt to [ClimatiQ](https://www.climatiq.io/docs/guides/tutorials/quickstart), which returns the emissions factor of a material. From this. we can derive the equivalent CO2 emissions.
 
 To obtain even more accurate recordings of Scope 1/direct emissions, we aim to equip factories with our custom low-cost GHG sensors. Their data is stored in a Cloudant Database which is periodically queried by an LSTM Neural Network deployed on Watson Machine Learning to forecast future demand - **solely on emission trends**. The results of which are shown in the RT-Readings page and Dashboard.
 
@@ -106,30 +106,20 @@ More detail is available in our [description document](./docs/DESCRIPTION.md).
 
   
 
-_INSTRUCTIONS: Included here is a list of commonly used IBM AI services. Remove any services you did not use, or add others from the linked catalog not already listed here. Leave only those included in your solution code. Provide details on where and how you used each IBM AI service to help judges review your implementation. Remove these instructions._
+- [Watson Discovery]() – Used to extract emissions data from receipts. An API call to a discovery project is made from a Cloud Function that is triggered whenever a receipt is added to the Cloud Object Store. The resulting natural language query passage text is then fed into a Llama 2 model for concise data extraction. This is then fed to Climatiq for emission factor determination.
 
-  
-
-- [IBM Natural Language Understanding](https://cloud.ibm.com/catalog/services/natural-language-understanding) - WHERE AND HOW THIS IS USED IN OUR SOLUTION
-
-- [Watson Assistant](https://cloud.ibm.com/catalog/services/watson-assistant) - WHERE AND HOW THIS IS USED IN OUR SOLUTION
-
-- [Watson Discovery](https://cloud.ibm.com/catalog/services/watson-discovery) - WHERE AND HOW THIS IS USED IN OUR SOLUTION
-
-- [Watson Speech to Text](https://cloud.ibm.com/catalog/services/speech-to-text) - WHERE AND HOW THIS IS USED IN OUR SOLUTION
-
-- [Watson Text to Speech](https://cloud.ibm.com/catalog/services/text-to-speech) - WHERE AND HOW THIS IS USED IN OUR SOLUTION
-
-- List any additional [IBM AI services](https://cloud.ibm.com/catalog?category=ai#services) used or remove this line
+- [Watson Machine Learning]()  - Used to deploy an LSTM Neural Network TensorFlow model for CO2 emission perdition. Due to a high correlation between factory emission and product demand, the resulting emission extrapolation helps factories forecast future demand and mange supply chain better.
 
   
 
 ### Other IBM technology used
 
-  
 
-INSTRUCTIONS: List any other IBM technology used in your solution and describe how each component was used. If you can provide links to/details on exactly where these were used in your code, that would help the judges review your submission.
+- [IBM Cloud Object Storage]() – Receipts are uploaded to a bucket in IBM’s Cloud Object Storage which itself is also linked to a Watson Discovery project for rapid emission data derivation.
 
+- [IBM Cloudant ]()  - Used to store majority of data displayed on the dashboard from the bar chart’s emissions breakdown to the progress tracker data. This is further integrated with Watson Machine Learning through Cloud Functions to store LSTM perdition and long term storage of incoming sensor data.
+
+- [IBM Cloud Functions]()  - Use to integrate different IBM services together, facilitate visualisation of data stored in Cloudant on the react Dashboard, and make external API calls.
   
 
 ### Solution architecture
