@@ -69,25 +69,29 @@ Go-Green automates emissions tracking for factories and connects them with carbo
 
 ### Our idea
 
-Industrial-sector organizations need solutions to help them monitor and reduce their emissions. This is aided by increasing calls by individuals, institutions, and governments across the globe to the amount of GHGs we emit into the atmosphere.
+<![endif]-->
 
-Answering the call to reduce emissions, industrial firms and manufacturers in Kenya and abroad have hired consultants who manually go through piles of receipts to tally these firms’ emissions. This system is not only slow, but also inaccurate. Moreover, the calculation methods used are often not standardized across organizations leading to massive discrepancies in emissions reported as sited by the UN.
+Brief overview of solutions:
 
-Trust is another hurdle these firms must face, particularly when to comes to offsetting. It is noted that over 41% of Chief Sustainability Officers (CSOs) don’t use carbon offsetting due to a lack of trust in offsetting initiative’s ability to reduce their emissions fully and properly.
+Industrial-sector organisations are in need of a simple and cost-effective solution to help them monitor and reduce their emissions. This is aided by increasing calls by individuals, institutions, and governments across the globe to reduce the amount of GHGs we emit into the atmosphere.
 
-Reduction in emissions is also aided by a culture of sustainability within firms, and organisations lack proper incentive structures for employees to lead more sustainable lifestyles.
+Answering the call to reduce emissions, industrial firms in Kenya and abroad have hired consulting firms who manually go through piles of receipts to tally emissions. This process is slow and can lead to inaccurate results. Moreover, the calculation methods used are often not standardized across organisations, leading to massive discrepancies in emissions reported as cited by the [UN](https://www.washingtonpost.com/climate-environment/interactive/2021/greenhouse-gas-emissions-pledges-data/).
 
-Noting these factors, GoGreen believes that current systems of reporting and reducing emissions need to be re-thought.
+Trust is another hurdle these firms must face, particularly when to comes to offsetting. It is noted that over [41%](https://www.businesswire.com/news/home/20230117005064/en/41-of-Businesses-Avoid-Carbon-Offsets-Due-to-Trust-Issues-Despite-Critical-Net-Zero-Role-%E2%80%93-AiDash) of Chief Sustainability Officers (CSOs) don’t use carbon offsetting due to a lack of trust in these programs’ ability to reduce their emissions fully and properly.
 
-Our solution helps factories manage their CO2 emissions by equipping them with a platform that automates emissions recordings. We then go on to connect them to vetted carbon-offsetting initiatives which they can track the progress of on our site. Furthermore, our platform provides these firms with the ability to automate emissions recording from utility and equipment bills. This is facilitated by the use of IBM’s Watson Discovery to extract relevant data from receipts that is passed it to a foundational model (LLAMA 2)(link) for concise metrics extraction. Through Retrieval augment generation ([https://research.ibm.com/blog/retrieval-augmented-generation-RAG](https://research.ibm.com/blog/retrieval-augmented-generation-RAG)), we can pass key information from the receipt to ClimatiQ to return to us the emissions factor of a product and we can then use this information to calculate the equivalent CO2 emissions.
+Important to note, reduction in emissions is also aided by a culture of sustainability within firms. Organisations often lack proper incentive structures for employees to lead more sustainable lifestyles. Noting these factors, GoGreen believes that current systems of reporting and reducing emissions need to be re-thought.
 
-To obtain even more accurate recordings of Scope 1/ direct emissions, we aim to equip factories with our custom low-cost GHG sensors. Their data is store in a Cloudant Database which is periodically queried by an LSTM Neural network deployed on Watson Machine Learning to forecast future demand.
+Our solution helps factories manage their CO2 emissions by equipping them with a platform that automates emissions recording. We then connect them to **vetted** carbon-offsetting initiatives which they can track the progress of on our Progress Tracker page. Furthermore, our platform provides these firms with the ability to extract emissions data from utility and equipment bills by uploading them from the main [dashboard](h). This ability is facilitated by the use of IBM’s Watson Discovery to extract relevant text from receipts that is passed onto a [foundational language model (LLAMA 2)](link) for concise metric extraction. Through [Retrieval Augment Generation](https://research.ibm.com/blog/retrieval-augmented-generation-RAG), we can pass key information from the receipt to ClimatiQ, which returns the emissions factor of a material. From this. we can derive the equivalent CO2 emissions.
 
-The fully built sensor will **not** utilise developer ESP32 but professional grade STM kits for better ADC conversion at the edge to increase accuracy, and integrate this with laser-based in-situ GHG monitoring device.
+To obtain even more accurate recordings of Scope 1/direct emissions, we aim to equip factories with our custom low-cost GHG sensors. Their data is stored in a Cloudant Database which is periodically queried by an LSTM Neural Network deployed on Watson Machine Learning to forecast future demand - **solely on emission trends**. The results of which are shown in the RT-Readings page and Dashboard.
 
-To add onto the carbon-offseting ecosystem of products, our platform also hosts a land market place for individuals to lease their land to carbon offsetting projects that need a place to carry out their activities.
+The fully built sensor will utilise professional grade **STM32** kits (not ESP32) for better ADC conversion at the edge to increase accuracy and integrate this with laser-based in-situ GHG monitoring devices.
 
-In sum, our solution aims to make the process of carbon accounting seamless, accurate, and inexpensive. by using IBM Cloud and IBM Watson Services. By also having an employee fed to tarck emission, our solution incentives a culture of sustainability within organizations, as we seek impact not only on the organization level, but also on the personal leve
+To add onto the carbon-offsetting ecosystem of products, our platform seeks to use the hectares of untilitised land across Kenya - and the globe – by having a marketplace for individuals to lease unitilised land to carbon offsetting projects in need a place to carry out their activities.
+
+Our system also incorporates an employee feed to reduce emissions, in hopes of incentivizing shifts to more sustainable cultures within organizations; seeking to impact not only on the organization level, but also on the personal level.
+
+In sum, our solution aims to make the process of carbon accounting seamless, accurate, and inexpensive using IBM Cloud and IBM Watson services.
   
 
 More detail is available in our [description document](./docs/DESCRIPTION.md).
