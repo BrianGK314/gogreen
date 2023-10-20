@@ -57,7 +57,7 @@ _INSTRUCTIONS: Complete all required deliverable sections below._
 
 ### The issue we are hoping to solve
 
-Industrial processes heavily contribute towards climate change, accountable for nearly 25% all global emissions. However, tracking of GHG emissions in these firms is still **slow**, **complicated,** and **inaccurate**. 
+Industrial processes heavily contribute towards climate change, accountable for nearly 25% all global emissions. However, tracking of greenhouse gases (GHGs) emissions in these firms is still **slow**, **complicated,** and **inaccurate**. 
  
 ### How our technology solution can help
 
@@ -130,17 +130,22 @@ Diagram and step-by-step description of the flow of our solution:
 
   
 
-![Video transcription/translaftion app](https://developer.ibm.com/developer/tutorials/cfc-starter-kit-speech-to-text-app-example/images/cfc-covid19-remote-education-diagram-2.png)
 
-  
 
-1. The user navigates to the site and uploads a video file.
 
-2. Watson Speech to Text processes the audio and extracts the text.
+![Go-Green Solution]()
 
-3. Watson Translation (optionally) can translate the text to the desired language.
+1. Factory employee uploads receipts to Cloud Object Store through dashboard
 
-4. The app stores the translated text as a document within Object Storage.
+2. Receipt analysed and queried through Watson Discovery.
+
+3. GHG data from edge sensors stored in Cloudant.
+
+4. Model on Waston ML predicts future demand.
+
+5. Cloud Functions display analysed emissions data on dashboard.
+
+6. External Emissions data set used to test quality of model on Watson ML.
 
   
 
@@ -148,16 +153,13 @@ Diagram and step-by-step description of the flow of our solution:
 
   
 
-_INSTRUCTIONS: The following deliverables should be officially posted to your My Team > Submissions section of the [Call for Code Global Challenge resources site](https://cfc-prod.skillsnetwork.site/), but you can also include them here for completeness. Replace the examples seen here with your own deliverable links._
 
   
 
 ### Solution demo video
 
   
-
-[![Watch the video](https://raw.githubusercontent.com/Liquid-Prep/Liquid-Prep/main/images/readme/IBM-interview-video-image.png)](https://youtu.be/vOgCOoy_Bx0)
-
+ Video Link: https://youtu.be/pznRqCCFzK4
   
 
 ### Project development roadmap
@@ -166,19 +168,22 @@ _INSTRUCTIONS: The following deliverables should be officially posted to your My
 
 The project currently does the following things.
 
-  
-
-- Feature 1
-
-- Feature 2
-
-- Feature 3
+ - Monitor CO2 emissions in real time
+ - Extracts indirect emissions data from receipts through AI
+ - Lets organisations reward employees based on sustainable actions
+ - Offers individuals in Kenya a chance to lease unutilised land to carbon offset programs
 
   
 
 In the future we plan to...
 
-  
+  - Track other type GHG like methane, Nitrous oxide, HFCs, etc.
+  - Develop Surveys to track upstream and downstream emissions for Scope 3 tallying.
+  - Establish proprietary database for emissions factors of various materials by collaborating with research institutions
+  - Incorporate payment gateway on site for faster offset deal-making
+  - Expand land lease functionality outside Kenya by cooperating with government land ministries across Africa and Europe initially and then launch service globally.
+  - Develop cheaper in-situ GHG monitoring devices 
+  - Release GHG emissions API to institutions and governments.
 
 See below for our proposed schedule on next steps after Call for Code 2023 submission.
 
@@ -188,30 +193,6 @@ See below for our proposed schedule on next steps after Call for Code 2023 submi
 
   
 
-## Additional details
 
-  
-
-_INSTRUCTIONS: The following deliverables are suggested, but **optional**. Additional details like this can help the judges better review your solution. Remove any sections you are not using._
-
-  
-
-### How to run the project
-
-  
-
-INSTRUCTIONS: In this section you add the instructions to run your project on your local machine for development and testing purposes. You can also add instructions on how to deploy the project in production.
-
-  
-
-### Live demo
-
-  
-
-You can find a running system to test at...
-
-  
-
-See our [description document](./docs/DESCRIPTION.md) for log in credentials.
 
   
