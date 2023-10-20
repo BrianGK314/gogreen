@@ -4,24 +4,26 @@ const { CloudPakForDataAuthenticator } = require('ibm-watson/auth');
 
 let quryResoonse;
 
-const discovery = new DiscoveryV2({
-  authenticator: new CloudPakForDataAuthenticator({
-    url: 'https://{cpd_cluster_host}{:port}/icp4d-api/v1/authorize',
-    username: '{username}',
-    password: '{password}',
-  }),
-  version: '2020-08-30',
-  serviceUrl: 'https://{cpd_cluster_host}{:port}/discovery/{release}/instances/{instance_id}/api',
-});
+// UNCOMMENT !!!!!!!!!
+
+// const discovery = new DiscoveryV2({
+//   authenticator: new CloudPakForDataAuthenticator({
+//     url: '-----------------',
+//     username: '---------------',
+//     password: '---------------',
+//   }),
+//   version: '2020-08-30',
+//   serviceUrl: '---------------',
+// });
 
 
 
 
-const queryParams = {
-  projectId: '{projectId}',
-  naturalLanguageQuery: 'What item was baught and how much of the product was ordered?',
+// const queryParams = {
+//   projectId: '---------------',
+//   naturalLanguageQuery: 'What item was baught and how much of the product was ordered?',
 
-};
+// };
 
 discovery.query(queryParams)
   .then(response => {
@@ -73,7 +75,6 @@ discovery.query(queryParams)
                  }),
               })
               .then(response => {
-                // Handle the response if necessary
               })
             .catch(error => {
             console.error('Error in the third fetch:', error);
