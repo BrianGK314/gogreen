@@ -1,0 +1,76 @@
+.add-info-for-feed{
+    display: flex;
+    flex-direction: column;
+}
+
+.text-for-uplaod{
+    min-width: 176px;
+    font-size: smaller;
+    width: max-content;
+}
+
+.get-info-feed{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}   
+
+.text-input-for-feed{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-forfeed{
+    margin: 1rem 0;
+    margin-left: 1rem;
+    border: none;
+    border-bottom:1px solid black ;
+    outline: none;
+}
+
+.submit-feed{
+    outline: none;
+    border: none;
+}
+
+.modal-upload-post{
+    width: 40% !important;
+    height: 54%;    
+}
+
+.upload-fee-main{
+    background-color: #c1ff72;
+}
+
+.upload-modal-action{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.get-info-lease{
+    padding-top: 8rem;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.modal-upload-lease{
+    width: 50% !important;
+    height: 70%;
+}
+
+.upload-lease-action{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.add-info-for-ease{
+    width: 90%;
+}
+
+.input-forfeed-lease{
+    width: 38%;
+}

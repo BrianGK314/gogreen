@@ -1,0 +1,32 @@
+.main-linechart{
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+    background-color: #f8f8f3;
+}
+
+.centre-real-time{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 0;
+
+}
+
+.real-time-line-header{
+    width: 100vw;
+    height: 60px;
+    font-size: 35px;
+    text-align: center;
+
+}
+
+.rt-line{
+    height: 60%;
+    width: 80vw;
+    background-color: white;
+    border-radius: 1rem;
+
+}
