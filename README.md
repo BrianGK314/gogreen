@@ -183,7 +183,7 @@ See below for our proposed schedule on next steps after Call for Code 2023 submi
 
   
 
-![Roadmap](./images/RoadMap.png)
+![Roadmap](./images/Road%20Map.png)
 
 ## Additional details
 
