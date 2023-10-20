@@ -7,44 +7,31 @@
 
 - [Project summary](#project-summary)
 
-- [The issue we are hoping to solve](#the-issue-we-are-hoping-to-solve)
+  - [The issue we are hoping to solve](#the-issue-we-are-hoping-to-solve)
 
-- [How our technology solution can help](#how-our-technology-solution-can-help)
+  - [How our technology solution can help](#how-our-technology-solution-can-help)
 
-- [Our idea](#our-idea)
+  - [Our idea](#our-idea)
 
 - [Technology implementation](#technology-implementation)
 
-- [IBM AI service(s) used](#ibm-ai-services-used)
+  - [IBM AI service(s) used](#ibm-ai-services-used)
 
-- [Other IBM technology used](#other-ibm-technology-used)
+  - [Other IBM technology used](#other-ibm-technology-used)
 
-- [Solution architecture](#solution-architecture)
+  - [Solution architecture](#solution-architecture)
 
 - [Presentation materials](#presentation-materials)
 
-- [Solution demo video](#solution-demo-video)
+  - [Solution demo video](#solution-demo-video)
 
-- [Project development roadmap](#project-development-roadmap)
+  - [Project development roadmap](#project-development-roadmap)
 
 - [Additional details](#additional-details)
 
-- [How to run the project](#how-to-run-the-project)
+  - [How to run the project](#how-to-run-the-project)
 
-- [Live demo](#live-demo)
-
-- [About this template](#about-this-template)
-
-- [Contributing](#contributing)
-
-- [Versioning](#versioning)
-
-- [Authors](#authors)
-
-- [License](#license)
-
-- [Acknowledgments](#acknowledgments)
-
+  - [Live demo](#live-demo)
   
 
   
