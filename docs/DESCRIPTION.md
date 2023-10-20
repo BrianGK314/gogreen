@@ -3,7 +3,10 @@
 
   
 
-Go Green aims to provide factories with a carbon accounting platform to monitor their CO2 emissions data in real time
+Go Green aims to provide factories with a carbon accounting platform to monitors and manage their GHG emissions. We then connectt them to offseting initiatives to help reduce their reduce net emissioins. 
+
+This video submission is by Brian Gitau and Trevor Atela for IBM's Call for Code 2023 Round 4
+
 
   
 

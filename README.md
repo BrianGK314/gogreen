@@ -185,8 +185,13 @@ See below for our proposed schedule on next steps after Call for Code 2023 submi
 
 ![Roadmap](./images/RoadMap.png)
 
-  
+## Additional details
 
+### How to run the project
 
+INSTRUCTIONS: Before downloading, one should configure their corresponding Watson Cloud Object Store/Discovery/Cloudant/Cloud Function services. After this pull the repo to your local machine, add the corresponding credential fields and run using the command "npm start". 
 
+### Live demo
+
+Due to my IBM cloud account being on a limited free tier, and not being able to tell when the trial will expire, I decided to host my app -temporarily- on another server.  A link to a running system is running [here](https://gogreen-ibm.web.app/).
   
