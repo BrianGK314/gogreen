@@ -1,3 +1,7 @@
+//Through Cloud Functions we are able to retrieve data for real time emissions data located in our Cloudant DB
+
+
+
 import React from 'react'
 import "./RealTimeData.css"
 import UpdatingLineChart from './UpdatingLineChart'

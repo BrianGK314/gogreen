@@ -139,8 +139,7 @@ https://cloud.ibm.com/apidocs/discovery-data?code=python
 
 https://gbvbnithub.com/kchallapalli/WatsonAssistantCallout/blob/master/function_callout_to_discovery_service.js
 
-  
-  
+- Due to lack of IBM Resources, not all functionality on site could be implemented, and reliance on these knowledge sources was crucial in making the Go-Green Alpha-Prototype we present to you in this competition.  
   
   
 

@@ -1,3 +1,5 @@
+// Here we use Data store in IBMs Cloudant to be displayed in the frontend dashboard by calling cloud functions
+
 import { ResponsiveBar } from "@nivo/bar";
 import { tokens } from "./theme";
 import { mockBarData as data } from "./cfuncs/functionList";

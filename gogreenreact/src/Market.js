@@ -1,3 +1,7 @@
+//Through Cloud Functions we are able to retrieve as well as post data for land leases located in our Cloudant DB   
+
+
+
 import React ,{useEffect, useState} from 'react'
 import "./Market.css"
 import "./Dash.css"

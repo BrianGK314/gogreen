@@ -1,3 +1,8 @@
+// The ESP32 prototype makes a post request to save sensor data in Cloudant using Cloud Functions as seen below
+
+
+//No feasible nodeRed support/IOT Platform support for MQTT
+
 #include <WiFi.h>
 #include <ArduinoJson.h>
 #include <HTTPClient.h>

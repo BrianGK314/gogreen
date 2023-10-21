@@ -1,3 +1,5 @@
+//Through Cloud Functions we are able to retrive data for real-time progress located in our Cloudant DB
+
 import React, {useEffect, useState} from 'react'
 import { DataGrid } from '@mui/x-data-grid'
 import "./ProgressTrack.css"

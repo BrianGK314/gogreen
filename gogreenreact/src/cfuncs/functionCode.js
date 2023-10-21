@@ -1,4 +1,7 @@
+/// Various IBM Cloud Functions utilised
+
 // ////Get Pie chart data
+
 //SDFN- POST MISS--3
 // // Repeaded  code
 

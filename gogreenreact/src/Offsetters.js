@@ -1,3 +1,6 @@
+//Through Cloud Functions we are able to retrieve data for vetted offsetting initiatives located in our Cloudant DB
+
+
 import React ,{useState} from 'react'
 import "./Market.css"
 import "./Dash.css"

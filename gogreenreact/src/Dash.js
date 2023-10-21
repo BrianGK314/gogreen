@@ -1,3 +1,7 @@
+
+// IBM COS is used for storing receipts pdfs
+
+
 import React, {useEffect, useState} from 'react'
 import './Dash.css'
 import {FaHeart, FaUpload} from "react-icons/fa"

@@ -1,3 +1,5 @@
+///The following code uses Watson Discovery API to make natural language queries, then feed queries to LLM, then pass filtered generated text to be saved on Cloudant
+
 const fs = require('fs');
 const DiscoveryV2 = require('ibm-watson/discovery/v2');
 const { CloudPakForDataAuthenticator } = require('ibm-watson/auth');
